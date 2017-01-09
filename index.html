@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Nikaple's Portfolio</title>
+
+  <!-- Fav Icon -->
+  <link href="./img/FavIcon.ico" mce_href="./img/FavIcon.ico" rel="bookmark" type="image/x-icon" /> 
+  <link href="./img/FavIcon.ico" mce_href="./img/FavIcon.ico" rel="icon" type="image/x-icon" /> 
+  <link href="./img/FavIcon.ico" mce_href="./img/FavIcon.ico" rel="shortcut icon" type="image/x-icon" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <!-- font-awesome CSS -->
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="http://v3.bootcss.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+
+  <!-- SlidesJS -->
+  <script type="text/javascript" src="js/jquery.slides.min.js"></script>
+
+
+  <style>
+    body {
+      background: url(http://p1.bqimg.com/567571/547be80b4d81bb11.png) repeat;
+      font-family: "微软雅黑", "Microsoft Yahei";
+      -webkit-font-smoothing: antialiased;
+      color: #232525;
+    } 
+    .black-bg{
+      background-color: black;
+    }
+    .header{
+      background-color: rgba(245,245,245,.7);
+      border-style: solid;
+      border-width: 2px;
+      border-color: white;
+      border-radius: 5%;
+      padding: 2% 2% 0% 2%;
+    }
+    .game-description{
+      text-indent: 2em;
+    }
+    .game-title{
+      text-align: center;
+      font-size: 1.2em;
+    }
+    .shadow{
+      box-shadow: 0 0 .5em .5em #ccc;
+      background-color: rgba(245,245,245,.7);
+    }
+    .center{
+      width: auto;
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .gallery-container{
+      padding-bottom: 2%;
+    }
+  </style>
+
+  <!-- Gallery slides styles -->
+  <style>
+    #slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(http://p1.bpimg.com/567571/87d20dccc551cd59.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+  </style>
+  <!-- End SlidesJS Optional-->
+
+  <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+  <style>
+    #slides {
+      display: none
+    }
+
+    .container {
+      margin: 0 auto
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
+  </style>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <body>
+    <div class="container">
+      <!-- navigator start-->
+      <div class="header shadow">
+        <ul class="nav nav-pills pull-right" role="tablist">
+          <li role="presentation"><a href="#profile">Profile</a></li>
+          <li role="presentation"><a href="#collections">Collections</a></li>
+          <li role="presentation"><a href="#gallery">Gallery</a></li>
+          <li role="presentation"><a href="#contact">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">Nikaple's Portfolio</h3>
+      </div>
+      <!-- navigator end-->
+
+      <!-- profile start-->
+      <div class="jumbotron shadow" id="profile">
+        <p class="thumbnail"><img src="http://i1.piimg.com/567571/08d3790e83aba6a7.png"></img>
+        </p>
+        <h3>Nikaple</h3>
+        <h4>A self-taught game developer of mainly I wanna be the guy series.</h4>
+        <!--   <p><a class="btn btn-lg btn-success" href="./Narrow Jumbotron Template for Bootstrap_files/Narrow Jumbotron Template for Bootstrap.html" role="button">This is a button</a></p> -->
+      </div>
+      <!-- profile end-->
+
+      <!-- collections start-->
+      <div class="row shadow" id="collections">
+        <div class="col-lg-12">
+          <h3><p class="text-center">Game Collections</p></h3>
+          <hr />
+        </div>
+        <div class="col-lg-6">
+          <h4 class="text-center"><em>Independent Games</em></h4>
+          <hr />
+          <div class="thumbnail">
+            <img src="http://p1.bpimg.com/583045/e612f5f8829971bd.png" alt="I Wanna QBOOM"></img>
+            <h5 class="game-title">I Wanna QBOOM!</h5>
+            <p class="game-description">为手残联盟大会制作的初见竞技游戏，拥有三种不同难度可选择。想faQ之前可要考虑清楚了！</p>
+          </div>
+
+          <div class="thumbnail">
+            <img src="http://p1.bpimg.com/583045/7b744485d7ca7c35.jpg" alt="I Wanna Enjoy the Music"></img>
+            <h5 class="game-title">I Wanna Enjoy the Music</h5>
+            <p class="game-description">初心者向(？)耐久系列，由于Practice Mode的存在，游戏难度连原来的十分之一都不到。</p>
+          </div>
+
+          <div class="thumbnail">
+            <img src="http://p1.bpimg.com/583045/33a0817b8a82c141.png" alt="I Wanna be the Pierrot"></img>
+            <h5 class="game-title">I Wanna be the Pierrot</h5>
+            <p class="game-description">中级向跳刺+耐久游戏。有多少人是因为耐久BGM玩的这个游戏？</p>
+          </div>
+
+          <div class="thumbnail">
+            <img src="http://p1.bpimg.com/583045/c6228dee45e9fd05.png" alt="I Wanna Cry"></img>
+            <h5 class="game-title">I Wanna Cry</h5>
+            <p class="game-description">哈哈哈哈哈哈哈哈哈哈哈哈哈 哈哈哈哈哈哈哈哈 哈哈哈 哈哈哈 哈哈哈 哈哈哈！</p>
+          </div>
+
+          <div class="thumbnail">
+            <img src="http://p1.bpimg.com/583045/29206f20503fc200.png" alt="I Wanna fa腰果"></img>
+            <h5 class="game-title">I Wanna fa腰果</h5>
+            <p class="game-description">一个简单的fa(da)腰(dan)果(huang)的游戏！15面跳刺+一个小boss就结束了！</p>
+          </div>
+
+        </div>
+        <hr>
+        <div class="col-lg-6">
+          <h4 class="text-center"><em>Collaborative Games</em></h4>
+          <hr />
+          <div class="thumbnail">
+            <img src="http://p1.bpimg.com/583045/0dced96d77895cc9.png" alt="I Wanna Biu!"></img>
+            <h5 class="game-title">I Wanna Biu!</h5>
+            <p class="game-description">与Q少(sunlaoqq)、妖精(xiao_huai)合作的大会游戏并制作的最终关。感谢教练的超帅封面！</p>
+          </div>
+
+          <div class="thumbnail">
+            <img src="http://p1.bpimg.com/583045/c35f235e981e8ecc.png" alt="I Wanna be the Cute Duck"></img>
+            <h5 class="game-title">I Wanna be the Cute Duck</h5>
+            <p class="game-description">与Zero-G割割合作的中难跳刺+耐久游戏！第一次制作舞曲耐久，想来还有点紧张呢~</p>
+          </div>
+
+          <div class="thumbnail">
+            <img src="http://p1.bpimg.com/583045/9b0f80483fc3571f.gif" alt="I Wanna BOOM the Summer Holiday"></img>
+            <h5 class="game-title">I Wanna BOOM the Summer Holiday</h5>
+            <p class="game-description">与Q少(sunlaoqq)、老虎(crazy_tiger)合作的新手向大会游戏，这次负责的是第二关的制作。</p>
+          </div>
+
+          <div class="thumbnail">
+            <img src="http://p1.bpimg.com/583045/aff7e73aaac7ab95.png" alt="I Wanna Sell Door"></img>
+            <h5 class="game-title">I Wanna Sell Door</h5>
+            <p class="game-description">与Q少(sunlaoqq)、陀螺(kartoro)合作的中级向大会游戏，这次做了个不太一样的I Wanna。</p>
+          </div>
+
+          <div class="thumbnail">
+            <img src="http://p1.bpimg.com/583045/7e94c7378b509966.png" alt="I Wanna Love the Miku"></img>
+            <h5 class="game-title">I Wanna Love the Miku</h5>
+            <p class="game-description">与Q少(sunlaoqq)、Fail_Jguy、sunbla、小阳(sheep_xiaoyang)合作的超赞跳刺+耐久游戏。</p>
+          </div>
+        </div>
+      </div>
+      <!-- collections end-->
+
+      <!-- gallery start-->
+      <div class="row shadow" id="gallery">
+        <div class="col-lg-12">
+          <div class="center">
+            <h3><p class="text-center">Gallery</p></h3>
+          </div>
+        </div>
+        <div class="col-lg-12 gallery-container">
+          <div id="slides">
+            <img src="http://p1.bpimg.com/583045/f91c8470d4a8f238.jpg" alt="gallery#1"></img>
+            <img src="http://i1.piimg.com/583045/a32464043139e098.jpg" alt="gallery#2"></img>
+            <img src="http://p1.bpimg.com/583045/9896a8bbc8b2c8d2.jpg" alt="gallery#3"></img>
+            <img src="http://i1.piimg.com/583045/6270810967a1e639.jpg" alt="gallery#4"></img>
+            <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+            <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- gallery end-->
+
+
+      <!-- contact start-->
+      <div>
+        <div class="row shadow" id="contact">
+          <div class="col-lg-12">
+            <h3><p class="text-center">Contact</p></h3>
+            <hr />
+            <div class="col-lg-3">
+              <a class="list-group-item" href="http://wpa.qq.com/msgrd?v=3&uin=524203957&site=qq&menu=yes" target="_black"><i class="fa fa-qq fa-fw" aria-hidden="true"></i>QQ</a>
+              <hr />
+            </div>
+            <div class="col-lg-3">
+              <a class="list-group-item" href="http://weibo.com/Nikaple" target="_black"><i class="fa fa-weibo fa-fw" aria-hidden="true"></i>Weibo</a>
+              <hr />
+            </div>
+            <div class="col-lg-3">
+              <a class="list-group-item" href="http://codepen.io/Nikaple/" target="_black"><i class="fa fa-codepen fa-fw" aria-hidden="true"></i>Codepen</a>
+              <hr />
+            </div>
+            <div class="col-lg-3">
+              <a class="list-group-item" href="http://space.bilibili.com/471054" target="_black"><i class="fa fa-video-camera fa-fw" aria-hidden="true"></i>Bilibili</a>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- contact end-->
+      <!-- SlidesJS Required: Start Slides -->
+      <!-- The container is used to define the width of the slideshow -->
+
+
+      <!-- Gallery Slider -->
+
+
+      <!-- footer start-->
+      <div class="footer">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="nav nav-pills pull-left" role="tablist">
+              <li role="presentation"><a href="#profile">Profile</a></li>
+              <li role="presentation"><a href="#collections">Collections</a></li>
+              <li role="presentation"><a href="#gallery">Gallery</a></li>
+              <li role="presentation"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h6 class="text-left">© Nikaple Production 2016</h6>
+          </div>
+        </div>
+      </div>
+      <!-- footer end-->
+    </div>
+    <!-- /container -->
+
+    <!-- Gallery Slider -->
+    <script>
+      $(function() {
+        $('#slides').slidesjs({
+          width: 900,
+          height: 1280,
+          navigation: false,
+          play: {
+            active: false,
+            auto: true,
+            interval: 6000,
+            swap: false,
+            pauseOnHover: true,
+            restartDelay: 2000
+          }
+        });
+      });
+    </script>
+    <!-- End Gallery Slider-->
+
+  </body>
+  </html>
